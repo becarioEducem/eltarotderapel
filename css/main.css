@@ -1,0 +1,295 @@
+/* Kalam regular */
+@font-face {
+    font-display: auto;
+    font-family: "Kalam";
+    src: url("../fonts/Kalam-Regular.eot");
+    src: url("../fonts/Kalam-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/Kalam-Regular.woff2") format('woff2'),
+         url("../fonts/Kalam-Regular.woff") format('woff'),
+         url("../fonts/Kalam-Regular.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Kalam italic */
+@font-face {
+    font-display: auto;
+    font-family: "Kalam";
+    src: url('../fonts/Kalam-Light.eot');
+    src: url('../fonts/Kalam-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kalam-Light.woff2') format('woff2'),
+         url('../fonts/Kalam-Light.woff') format('woff'),
+         url('../fonts/Kalam-Light.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Kalam bold */
+@font-face {
+    font-display: auto;
+    font-family: "Kalam";
+    src: url('../fonts/Kalam-Bold.eot');
+    src: url('../fonts/Kalam-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kalam-Bold.woff2') format('woff2'),
+         url('../fonts/Kalam-Bold.woff') format('woff'),
+         url('../fonts/Kalam-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999;}
+
+/* Barra de Navegació */
+header{
+    display: none;
+}
+
+.navbar{
+    font-size: 1.5rem;
+    background: rgba(0,0,0,1.0);
+}
+
+a.nav-link.active {
+    border-bottom: 0.25rem solid purple;
+}
+
+.navbar-brand a{
+    color:white;
+    font-size: 1.5rem;
+}
+
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+
+.navbar-brand a.hover{
+    -webkit-text-stroke: 2px purple;
+    color: #341272;
+}
+
+.navbar-brand p{
+    font-size: 0.8rem;
+}
+
+
+.large-header {
+    position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/rapel_tarot_mancia_estrellas_portada_fondo.jpg');
+}
+
+.main-title {
+    position: absolute;
+	margin: 0;
+	padding: 0;
+    color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+    font-family: 'Kalam', cursive;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 7.5rem;
+}
+
+.main-title.thin {
+    top: 58%;
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+a.main-title {
+    color: #f9f1e9;
+}
+
+a.main-title:hover{
+    text-decoration: none;
+}
+
+a.main-title.hover{
+    color: #341272;
+    -webkit-text-stroke: 2px purple;
+}
+
+/* Fletxes de Desplaçament */
+#downarrow{
+    z-index: 2;
+    position: absolute;
+	bottom: 1%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+    font-size: 3rem;
+}
+
+#uparrow{
+    z-index: 2;
+    position: fixed;
+    bottom:5vh;
+    right: 1vw;
+    font-size: 3rem;
+    display: none;
+}
+
+/* Títols i Icones seccions */
+.section-title{
+    border-bottom: 0.3rem solid purple;
+    font-size: 2.25rem;
+}
+
+#mainbrand{
+    font-family: 'Kalam', cursive;
+}
+
+#cartas{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+#buda{
+    object-fit: contain;
+    border-radius:100%;
+    max-width: 100%;
+    max-height: 40vh;
+    filter:opacity(90%);
+}
+
+.featicon{
+    background-color: purple;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4rem;
+    height: 64px;
+    width: 64px;
+}
+
+/* Seccions amb Imatge de Fons */
+.imagefilter:before {
+    content: '';
+    position: absolute;
+    top:0; 
+    left:0;
+    width:  100%; 
+    height: 100%;
+    background:rgba(0,0,0,0.25);
+}
+
+.imagebackground {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+.imagewrapper{
+    position: relative;
+}
+
+.texto-servicios a, .privacidad a{
+    padding: 0;
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline;
+}
+
+
+#tirada {
+    min-height: 65vh;
+    background-image: url("../img/rapel_tarot_mancia_tirada_fondo.jpg");
+    background-attachment: fixed;
+}
+
+#servicios {
+    min-height: 45vh;
+    /*background-image: url("../img/quote-min.jpg");
+    background-attachment: fixed;*/
+}
+
+
+#contacto{
+    color: white;
+    min-height: 85vh;
+    background-image: url("../img/rapel_tarot_mancia_contacto_fondo.jpg");
+    background-size: cover;
+}
+
+#inspiracion, .nav-link[href="#inspiracion"]{
+    display: none;
+}
+
+.nav-link[href="#inspiracion"]{
+    display: none;
+}
+
+.custom-control-label::before, 
+.custom-control-label::after {
+height:2rem;
+top: -0.5rem;
+width: 2rem;
+display: block;
+text-align: left;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before, .form-control:focus{
+    box-shadow: 0px 0px 0px 0.2rem rgba(96, 0, 126, 0.25);
+    border-color: purple;
+}
+
+:checked.custom-control-input ~ .custom-control-label::before{
+    border-color: purple;
+    background-color: purple;
+}
+
+.btn-success{
+    border-color: purple!important;
+    background-color: purple!important;
+}
+
+#labelTerms{
+    padding-left: 1rem;
+}
+
+.help-block.with-errors{
+    color: red;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    .main-title{
+        font-size:8rem;
+    }
+
+    .main-title.thin{
+        top: 65%;
+        font-size: 2rem;
+    }
+
+    #downarrow{
+        font-size: 6rem;
+    }
+
+    #mainbrand{
+        font-size: 3.35rem;
+      }
+
+    .navbar-brand p{
+        font-size: 1.25rem;
+    }
+
+    #inspiracion, .nav-link[href="#inspiracion"]{
+        display: inherit;
+    }
+ }

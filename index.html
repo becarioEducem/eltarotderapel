@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="David González">
+        <meta name="keywords" content="tarot mancias adivinación futuro quiromancia runas velas destino ritual">
+        <meta name="description" content="Tarot y mancias">
+        <title>El Tarot de Rapel</title>
+        <!-- Bootstrap 4.3.1 resources-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet"> 
+        <!-- Font Awesome 5.6.3-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- JQuery 3.3.1 + Popper.JS 1.14.6 + Bootstrap JS 4.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <!-- CSS del Home-->
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div id="cover"></div>
+        <!-- Menú de Navegació -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="navbar-brand">
+                    <h1><a id="mainbrand" class="hovereffect" href="#inicio">El Tarot de Rapel</a></h1>
+                </div>
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto mr-4 mr-lg-4 mt-4 mt-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Presentación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tirada">Tarot y Mancias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conocenos">Conóceme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./php/login.php">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Continguts -->
+        <main>
+            <!-- Portada -->
+            <section id="large-header" class="container-fluid large-header">
+                <div id="inicio"></div>
+                <canvas id="constelaciones"></canvas>               
+                <a id="main-title-link" class="main-title hovereffect" href="#servicios">El Tarot de Rapel</a>
+                <br>
+                <span class="main-title thin"></span>
+                <!-- Cursor per baixar de secció-->
+                <a id="downarrow" class="text-light" href="#servicios"><span class="fas fa-angle-down"></span></a>
+            </section>
+
+            <!-- Cursor per a pujar de secció-->
+            <a id="uparrow" class="text-muted" href="#inicio"><span class="fas fa-arrow-circle-up"></span></a>
+       
+            <!-- Presentació -->
+            <section id="servicios" class="container-fluid">
+                <div class="imagewrapper">
+                    <div class="row justify-content-center">
+                        <h3 class="section-title mt-5 mb-5">Presentación</h3>
+                    </div>
+                    <div class="row mr-3 ml-3 mb-5">
+                        <div class="texto-servicios col-md-6 mt-5 d-flex flex-column text-justify">
+                            <p> <strong class="font-weight-bold">El Tarot de Rapel</strong> 
+                                es un nuevo espacio de tarot y mancias únicamente atendido y desarrollado por mí. 
+                                Creado para poder escucharte y ayudarte con total dedicación. 
+                                Tu intuición será guiada a través de mi tarot en el que deposito y canalizo tu energía para una respuesta clara y concisa.
+                            </p>
+                            <p> En este <strong class="font-weight-bold">espacio de tarot y mancias</strong> no dispongo de línea (806), ni de pago electrónico. 
+                                Accederás únicamente a través del formulario y yo me pondré en contacto contigo.
+                            </p>
+                            <p> Siempre he preferido <strong class="font-weight-bold">el trato personal mucho más directo</strong> y, para mí, 
+                                sensitivo, que me permite comunicarme con más intensidad y precisión contigo.
+                            </p>
+                            <p> Te doy la bienvenida a <strong class="font-weight-bold">El Tarot de Rapel</strong> y te animo a participar de una 
+                                <a class="font-weight-bold nav-link" href="#tirada">experiencia diferente con el tarot y mancias.</a>
+                            </p>
+
+                                           
+                        </div>
+                        <div class="col-md-6 d-flex flex-row mt-5 justify-content-center">
+                            <img id="buda" src="img/rapel_tarot_mancia_buda.jpg" alt="Buda Dorado">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tarot y Mancias-->
+            <section id="tirada" class="container-fluid imagebackground imagefilter">
+                <div class="imagewrapper">
+                    <div class="row justify-content-center">
+                        <h3 class="section-title mt-5 mb-5">Tarot y Mancias</h3>
+                    </div>
+                    <div class="row mr-3 ml-3 mb-5">
+                        <div class="texto-servicios col-md-12 d-flex flex-column mt-5 text-justify">
+                            <p> <strong class="font-weight-bold">Mis tiradas de tarot</strong>
+                                 son completas y sencillas. Me enfoco en lo que el consultante desea saber. 
+                                 Así como en las percepciones que voy sintiendo 
+                                 <strong class="font-weight-bold">a través de tu propia energía.</strong>
+                            </p>
+                            <p> Yo te diré en todo momento lo que el tarot expresa. 
+                                Y <strong class="font-weight-bold">podrás preguntar loque necesites.</strong>
+                                Todos mis tarots son especiales para mí y tratados con respeto.
+                            </p>
+                            <p> <strong class="font-weight-bold">Las mancias</strong> que utilizo son por ejemplo 
+                                <strong class="font-weight-bold">velas, que yo misma ritualizo,</strong> 
+                                todo destinado a tu ayuda y guía.
+                            </p>
+                            <p>
+                                <strong class="font-weight-bold">El Tarot de Rapel</strong>, mi espacio de tarot y mancias, 
+                                no dispone de línea (806), ni de pago electrónico. 
+                                <strong class="font-weight-bold">Accederás únicamente a través del 
+                                    <a class="nav-link" href="#contacto">formulario</a> 
+                                    y yo me pondré en contacto contigo.</strong>
+                            </p>                   
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Conóceme -->
+            <section id="conocenos" class="container-fluid flex-column align-items-center ">
+                <div class="row justify-content-center mt-5">
+                    <h3 class="section-title">Conóceme</h3>
+                </div>
+                <div class="row mr-3 ml-3 mb-5">
+                    <div class="col-md-6 d-flex flex-row mt-5 justify-content-center">
+                        <img id="cartas" src="img/rapel_tarot_mancia_tirada_cartas.png" alt="Cartas El Tarot de Rapel">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column mt-5 text-justify">
+
+
+                        <p> Soy una <strong class="font-weight-bold">persona sencilla</strong>, 
+                            siempre me <strong class="font-weight-bold">apasionó el ser humano</strong> y sus 
+                            capacidades innatas para ayudar a su prójimo.
+                        </p>
+                        <p> Comencé en el mundo de tarot y mancias a través de otros medios, pues, 
+                            desde temprana edad tuve sueños que al principio no entendía pero enseguida me di cuenta de 
+                            <strong class="font-weight-bold">la conexión del sueño con las cosas que sucedían.</strong> 
+                            Así fui trabajando,  conociéndome a mí misma y descubriendo un mundo diferente 
+                            en el que me guían hasta el día de hoy.
+                        </p>
+                        <p>
+                            Espero poder ayudarte y estar a tu lado en lo que me sea posible, 
+                            andar juntas un nuevo camino lleno de posibilidades que siempre tuviste en ti.
+                        </p>
+                    </div>
+                </div>
+            </section>
+           <!-- Formulario de Contacto-->
+           <!-- ! En Rapel el canalla no ha pagat per desenvolupar un anticaptcha, BOT SPAM!!! -->
+            <section id="contacto" class="container-fluid">
+                <div class="row justify-content-center">
+                    <h3 class="section-title mt-5">Contacto</h3>
+                </div>
+                <form id="contactform" class="p-3" action="contact.php" method="POST" role="form" data-toggle="validator"> 
+                    <div class="messages"></div>
+                    <div class="row justify-content-around">
+                        <div class="ccol-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3">
+                            <div class="form-group">
+                                <label for="name">Tu Nombre</label>
+                                <input id="name" name="name" class="form-control" type="text" placeholder="Introduce tu nombre" data-error="Se requiere introducir el nombre" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3">
+                            <div class="form-group">
+                                <label for="mail">Tu Email</label>
+                                <input id="mail" name="mail" class="form-control" type="email" placeholder="Introduce tu cuenta de email" data-error="Se requiere introducir una dirección de correo electrónico válida" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3">
+                            <div class="form-group">
+                                <label for="phone">Tu Teléfono</label>
+                                <input id="phone" name="phone" class="form-control" type="tel" placeholder="Introduce tu número de teléfono" data-error="Se requiere introducir un teléfono válido" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="ccol-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3">
+                            <label for="prefday">Día de contacto preferente:</label>
+                            <select id="prefday" name="prefday" class="form-control">
+                                <option disabled hidden disabled selected value="0">-- Elige un día --</option>
+                                <option value="1">Lunes</option>
+                                <option value="2">Martes</option>
+                                <option value="3">Miércoles</option>
+                                <option value="4">Jueves</option>
+                                <option value="5">Viernes</option>
+                                <option value="6">Sábado</option>
+                                <option value="7">Domingo</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3">
+                            <label for="preftime">Horario de contacto preferente:</label>
+                            <select id="preftime" name="preftime" class="form-control">
+                                <option hidden disabled selected value="0">-- Elige una franja horaria --</option>
+                                <option value="1">Mañana</option>
+                                <option value="2">Tarde</option>
+                                <option value="3">Noche</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4 mt-3"></div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="msg">Tu Petición</label>
+                                <textarea id="msg" name="msg" class="form-control" rows="7" required data-error="Se requiere rellenar la petición"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="row justify-content-center mt-3 privacidad">
+                                <div class="form-group">
+                                    <div class="custom-control form-control-lg custom-checkbox checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="privacidad" name="privacidad" data-error="Debe acceptar antes la política de privacidad" required>
+                                        <label id="labelTerms" class="custom-control-label" for="privacidad">Acepto la <a class="pr-2 link-privacidad" href="#contacto">Política de privacidad</a></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                            <div class="row mt-3 text-center privacidad" style="font-size:0.75rem;">
+                                <p>El Tarot de Rapel te informa que la finalidad de la recogida y tratamiento de los datos personales que se te solicitan responde a la necesidad de dar respuesta a las cuestiones planteadas a través del formulario de contacto. La legitimación se realiza con en el consentimiento del interesado. Tus datos no se cederán a ningún tercero, excepto por obligación legal y podrás ejercer tus derechos de acceso, rectificación, y supresión, así como otros derechos, tal y como se recoje detalladamente en la <a href="#contacto" class="link-privacidad">Política de privacidad</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="bg-dark text-light text-center p-3">
+                <p>&copy; Todos los derechos reservados 2022</p>
+            </footer>
+        </main>
+		<script src="./js/TweenLite.min.js"></script>
+        <script src="./js/constelaciones.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

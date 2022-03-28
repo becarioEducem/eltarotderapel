@@ -1,0 +1,66 @@
+/* Barra de Navegació */
+.content{
+    margin-left: 1em;
+}
+
+.content, .form-control, button.btn-danger {
+    font-size: 0.75rem;
+}
+header{
+    background-color: black;
+}
+
+.maincrud{
+    position: relative;
+    top: 8vh;
+}
+
+.navbar{
+    font-size: 1.5rem;
+    background: rgba(0,0,0,1.0);
+}
+
+a.nav-link.active {
+    border-bottom: 0.25rem solid purple;
+}
+
+.navbar-brand a{
+    color:white;
+    font-size: 1.5rem;
+}
+
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+
+.navbar-brand a.hover{
+    -webkit-text-stroke: 2px purple;
+    color: #341272;
+}
+
+#mainbrand{
+    font-family: 'Kalam', cursive;
+}
+
+h2{
+    font-size:1rem;
+}
+
+@media (min-width: 576px) {
+    .content, option{
+        font-size: 0.9rem;
+    }
+
+    #mainbrand{
+        font-size: 3.35rem;
+      }
+    
+    h2{
+        font-size:2rem;
+      }
+
+    button.btn-danger{
+      font-size: 1.25rem;
+    }
+
+ }
